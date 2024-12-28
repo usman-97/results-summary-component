@@ -1,0 +1,222 @@
+.hanken-grotesk-medium {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .hanken-grotesk-bold {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .hanken-grotesk-extraBold {
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    background-color: hsl(221, 100%, 96%);
+    font-weight: 500;
+  }
+
+  .result-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    min-height: 100vh;
+  }
+
+  .result-summary-container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+  }
+
+  .primary {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .secondary{
+    color: hsl(241, 100%, 89%);
+  }
+
+  .result-title {
+    font-size: 25px;
+  }
+
+  .final-score {
+    margin: 40px 0;
+    padding: 60px 70px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .score {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+
+  .total-score {
+    color: hsl(241, 100%, 89%);
+  }
+
+  .feedback {
+    text-align: center;
+  }
+
+  .feedback .primary {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .feedback .secondary {
+    padding-top: 15px;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .category .label-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .label-container img {
+    padding-right: 10px;
+  }
+
+  .categories .reaction {
+    background-color: hsl(0, 100%, 95%);
+    color: hsl(0, 100%, 67%);
+  }
+
+  .categories .memory {
+    background-color: hsl(39, 100%, 95%);
+    color: hsl(39, 100%, 56%);
+  }
+
+  .categories .verbal {
+    background-color: hsl(166, 100%, 95%);
+    color: hsl(166, 100%, 37%);
+  }
+
+  .categories .visual {
+    background-color: hsl(234, 85%, 95%);
+    color: hsl(234, 85%, 45%);
+  }
+
+  .categories .category-score-container {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+  }
+
+  .category-total-score {
+    opacity: 0.5;
+  }
+
+  .summary button {
+    width: 100%;
+    padding: 15px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .summary button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Mobile and small screens */
+  @media (max-width: 768px) {
+    .result-summary {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .result-summary-container {
+      flex-direction: column;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .result {
+      padding: 30px 40px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .result-title {
+      font-size: 22px;
+    }
+
+    .final-score {
+      margin: 25px 0;
+      padding: 30px 40px;
+    }
+
+    .score {
+      font-size: 4rem;
+    }
+  }
